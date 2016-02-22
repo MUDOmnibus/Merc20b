@@ -1,0 +1,136 @@
+Merc Release 2.0 Beta
+Sunday 04 April 1993
+
+Furey	mec@garnet.berkeley.edu
+Hatchet	mitchell@ocf.berkeley.edu
+Kahn	michael@web.berkeley.edu
+
+
+
+=== Introduction
+
+Merc Diku Mud is a Diku Mud with many enhancements and contributions.  See our
+'contrib.txt' and 'help merc' for acknowledgements.  Send us a contribution,
+and you'll be in there too!
+
+Enjoy our mud.  May your visit here be ... Mercenary.
+
+This release of Merc is beta software, and is meant for testing, not production
+use.  See 'beta.txt' for details.
+
+The next release of Merc will be the full 2.0 production release.  We will
+release this on or before June 1, 1993.
+
+
+
+=== Copyright and License
+
+Diku Mud is copyright (C) 1990, 1991 by Sebastian Hammer, Michael Seifert,
+Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.  Their license agreement
+is in the file 'license.doc'.
+
+Merc Diku Mud is a derivative of the original Diku Mud and is subject to their
+copyright and license agreement.  Merc Diku Mud contains substantial
+enhancements to Diku Mud.  These enhancements are copyright 1992, 1993 by
+Michael Chastain, Michael Quan, and Mitchell Tse.  Our license agreement is in
+'license.txt'.
+
+The license terms boil down to this: the people who wrote this mud want due
+credit for their work.
+
+
+
+=== Contents of the Release
+
+	doc	Documentation
+	log	Game logs (initially empty).
+	player	Player files (initially almost empty).
+	src	All the source and area files.
+
+
+
+
+=== How to Install
+
+First, group with your highest level Unix guru, and have him or her tank.
+Merc is easier to install than other muds, but every site is different.
+
+(1) Get the release Merc_20.tar.Z or Merc_20.tar.z from one of these fine ftp
+    sites:
+
+	ferkel.ucsb.edu
+	ftp.math.okstate.edu
+	ucbvax.berkeley.edu
+    
+(2) Unpack the release.  The command to use depends on whether you got a
+    .Z or .z file:
+
+	uncompress < Merc_20.tar.Z | tar xvf -
+
+    or:
+
+	gzip -d Merc_20.tar.z | tar xvf -
+
+(3) Go into the 'src' directory.  Choose the Makefile for your operating
+    system and copy it into 'Makefile':
+
+	Makefile	Most machines with 'gcc'
+	Makefile.aix	AIX
+	Makefile.hp	Hpux
+	Makefile.next	NeXT
+	Makefile.tra	Traditional C (see 'trad.txt')
+
+(4) Run 'make' with the following options:
+
+	make -k >&! make.out
+
+    This will take 10 minutes to 60 minutes, depending on the speed of your
+    computer.
+
+    If you encounter errors with 'make', send us your 'make.out' file:
+
+	mail -s make.out mec@garnet.berkeley.edu < make.out
+
+    We will help you get Merc running, but obviously we can't guarantee
+    Merc will run on any particular machine.
+
+(5) Start the game:
+
+	startup &
+	telnet localhost 4000
+	
+(6) Drop us some e-mail at one of these addresses.  Tell us how you
+    like it!
+
+	mec@garnet.berkeley.edu
+	michael@web.berkeley.edu
+	mitchell@ocf.berkeley.edu
+
+(7) Of course you're going to change the title screen, help files, and so on.
+    Don't just erase globally erase the 'Merc' references, ok?  You wouldn't
+    like it if we did that to your work, so don't do it to ours.
+
+
+
+=== Support
+
+First, read the documentation in the 'doc' directory.  All of the documentation
+files have been brought up-to-date to reflect the current code.
+
+We have a mailing list, at 'merc-list@testeng.amdahl.com'.  Send mail to
+'merc-request@testeng.amdahl.com' to join the list.
+
+You can write to us directly at the e-mail addresses at the top of this
+document.
+
+When you write us, we need to know what kind of machine you're running on.  If
+you can give us specific information about the problem, that helps too.
+
+Specific information means: an adb or gdb stack trace (if you're reporting a
+crash), or a syslog with the relevant commands logged.  The player files are
+ascii files -- dump them into your mail message too.
+
+If your e-mail is too vague, we're likely to bounce it back.  There are three
+of us and dozens of you -- we simply can't engage in long-distance debugging,
+on unknown platforms, with the added factor of more code that you've dropped in
+since the release.

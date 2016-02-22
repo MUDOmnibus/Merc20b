@@ -1,0 +1,113 @@
+Merc Release 2.0 Beta
+Sunday 04 April 1993
+
+Furey	mec@garnet.berkeley.edu
+Hatchet	mitchell@ocf.berkeley.edu
+Kahn	michael@web.berkeley.edu
+
+
+
+=== Contribution Policy
+
+We welcome contributions to Merc.
+
+You can send us areas, spells, skills, bug reports, bug fixes, code, ideas,
+comments on our documentation, interesting stories, or anything else, to any of
+our addresses above.
+
+We particularly would like to get copies of 'bugs.txt', 'ideas.txt', and
+'typos.txt' from any site running a Merc mud.
+
+If we use your contribution, we will credit you for it in this file and in the
+source files.  The 'areas' command lists authors within the game, and 'help
+merc' credits major contributions as well.
+
+Merc is devoted to open release.  Once we accept a contribution, it will
+become available to the entire mud community.  Also, once we accept a
+contribution and integrate it into Merc, we will not remove it later if you
+change your mind.
+
+You are welcome to use any element of Merc in your own mud, as long as you
+follow the terms in 'license.doc' and 'license.txt'.  If you take things from
+Merc we'd appreciate e-mail from you.
+
+
+
+=== The First Contributions
+
+Merc Mud is based on Diku Mud, with Copper and Alfa enhancements.
+
+When we first started, Impy of Fajita Mud answered a lot of our newbie-coder
+questions.
+
+Frag, Tin, Razor, Jordan, Tre, and Matrix play-tested early Merc code.
+
+The Free Software Foundation and DJ Delorie wrote our development tools, and
+distribute them free, with source.
+
+
+
+=== New Area Contributions
+
+Vamplestat reworked and extended Miden'nir.
+
+Nirrad contributed the Fire Newt area.
+
+Tyrst contributed Wyvern Tower.
+
+Doctor contributed Galaxy.
+
+Raff contributed Dwarven Catacombs, Dangerous Neighborhood, and Elemental
+Canyon.
+
+Aod and Cauchy of Generic Mud gave us permission to use Smurf Village, Gnome
+Village, Dwarven Day Care Center, Old Marsh, Draconia, and Olympus.
+
+John Brothers of Silly Mud gave us permission to use Silly areas.  Although we
+haven't taken any yet, we appreciate having 2 megabytes of areas to draw on!
+
+
+
+=== Code and Idea Contributions
+
+Zrin contributed an 'auto-exit' function.
+
+We got the 'stats over 18 from magic items' idea from Alander.
+
+Diavolo contributed the gruesome 'death_cry' function.
+
+Many other imps and players gave us hundreds of suggestions, some of which are
+now realized.  Thanks to you all!
+
+Aod and Cauchy of Generic gave us permission to use Generic code.
+
+John Brothers of Silly gave us permission to use Silly code.  Although we
+haven't used any Silly code yet, we appreciate having it available.
+
+
+
+=== Bug Reports
+
+Mud Lite, Vego Mud, Final Mud, Rivers of Mud, Ruhr Mud, and Chase Mud sent us
+their 'bugs.txt', 'ideas.txt', and 'typos.txt' files.  These were VERY helpful
+and we ask that all Merc-based muds e-mail us these files from time to time.
+
+Hind and Quin (not the original Quinn of Diku, another Quin) helped on the
+Ultrix port.  Vic helped on the Linux port and 386/BSD ports.  Diavolo helped
+on the RS/6000 port.  Alander helped on the NeXT port.  Shephane Haechler
+helped on the Hpux port.
+
+During the course of the Linux port, Vic isolated some mystifying memory
+management problems.
+
+Abaddon proofread our comm.c and reported several bugs and weak spots.
+Of course, any remaining problems are ours, not his.
+
+Kalgen reported bugs in the 2.0 Alpha release.
+
+
+
+=== Mailing List
+
+Thanks to Zrin for administering the Merc mailing list.  You can join the list
+by sending e-mail to merc-request@testeng.amdahl.com.

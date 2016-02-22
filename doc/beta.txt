@@ -1,0 +1,32 @@
+Merc Release 2.0 Beta
+Sunday 04 April 1993
+
+Furey	mec@garnet.berkeley.edu
+Hatchet	mitchell@ocf.berkeley.edu
+Kahn	michael@web.berkeley.edu
+
+
+
+=== Beta Release
+
+This is a beta test release.  We expect you to look for bugs and report them to
+us.  When 2.0 comes out, we expect you to discard your beta software and run
+the production release.
+
+Yeah, right.  And everyone who's running Merc 1.0 sent us e-mail, and we've
+received many contributions of code and areas.  NOT!
+
+Therefore we've removed certain features from the beta release, particularly
+loading of player files.  (The internal data structures have changed
+sufficiently so that dumping in the 1.0 save code won't work, either.)
+
+We've also allowed any character to execute the 'advance' command, so that your
+test characters can advance to whatever level they need for testing.
+
+There are other beta-only changes in the code, which won't interfere at all
+with testing the code, compiling on new platforms, writing new areas, writing
+new skills and spells, and so on.
+
+If you want to run a production Merc mud, then run the 1.0 release.  If you
+want to help 2.0 Beta become a production 2.0 faster, then send us your bug
+reports and bug FIXES so we can finish beta testing faster.

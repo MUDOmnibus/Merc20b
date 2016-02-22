@@ -1,0 +1,26 @@
+#! /bin/csh -f
+
+# Set limits.
+nohup
+nice
+limit stack 1024k
+if ( -e shutdown.txt ) rm -f shutdown.txt
+
+while ( 1 )
+    # Run merc and handle log files.
+    if ( -e syslog ) mv syslog ../log/`date +%j.%H%M%S`
+    merc >&! syslog
+    mv syslog ../log/`date +%j.%H%M%S`
+
+    # Comment this out if no adb.
+    if ( -e core ) then
+	    echo '$c' | adb merc
+    endif
+
+    # Restart, giving old connections a chance to die.
+    if ( -e shutdown.txt ) then
+	rm -f shutdown.txt
+	exit 0
+    endif
+    sleep 15
+end
